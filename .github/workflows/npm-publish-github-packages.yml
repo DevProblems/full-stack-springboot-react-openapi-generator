@@ -1,0 +1,65 @@
+name: Publish frontend-ts-axios-package
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-jar:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: zulu
+          cache: maven
+
+      - name: Build with Maven
+        run: mvn -B package --file pom.xml
+
+      - name: Publish frontend Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-ts-axios-package
+          path: ./backend/target/generated-sources/frontend-ts-axios-package
+
+  publish-frontend-ts-axios-package:
+    needs: build-jar
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Download frontend-ts-axios-package
+        uses: actions/download-artifact@v4
+        with:
+          name: frontend-ts-axios-package
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: https://npm.pkg.github.com/
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Disabling the git tag from npm version
+        run: npm config set git-tag-version false
+
+      - name: Bump Version
+        run: npm version patch
+
+      - name: Publish npm package
+        run: npm publish
+
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.DEVPROBLEMS_GITHUB_TOKEN}}
