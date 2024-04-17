@@ -25,4 +25,9 @@ public class VideoService {
         var videos = this.videoRepository.findByTag(tag);
         return this.videoMapper.videoToYoutubeVideo(videos);
     }
+
+    public List<YoutubeVideo> getVideos() {
+        var videos = this.videoRepository.findDistinctByTag();
+        return this.videoMapper.videoToYoutubeVideo(videos);
+    }
 }

@@ -21,4 +21,9 @@ public class YoutubeDelegateImpl implements YoutubeApiDelegate {
     public ResponseEntity<List<YoutubeVideo>> getVideoByTag(String tag) {
         return ResponseEntity.ok(this.videoService.getVideoByTag(tag));
     }
+
+    @Override
+    public ResponseEntity<List<YoutubeVideo>> getVideos() {
+        return ResponseEntity.ok(this.videoService.getVideos());
+    }
 }

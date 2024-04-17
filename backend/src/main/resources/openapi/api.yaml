@@ -12,6 +12,20 @@ servers:
 
 paths:
 
+    /youtube/videos:
+      get:
+        tags:
+          - video
+        summary: Get Videos
+        operationId: getVideos
+        responses:
+          '200':
+            description: Success
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/Videos"
+
     /youtube/video/{tag}:
       get:
         tags:
