@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /api-docs/swagger
+
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb;DATABASE_TO_UPPER=false
+    driverClassName: org.h2.Driver
+    username: devproblems
+    password: devproblems
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update

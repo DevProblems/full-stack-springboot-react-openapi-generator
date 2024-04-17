@@ -1,0 +1,13 @@
+insert into video(tag,title,url) values('aws','Powertools Logging for AWS Lambda Java','https://www.youtube.com/embed/QdUaM2YRmOs');
+insert into video(tag,title,url) values('aws','AWS Cognito Groups & Fine-Grained Role-Based Access Control','https://www.youtube.com/embed/x4ziuGJIXzw');
+insert into video(tag,title,url) values('aws','Private RDS Instance & AWS Lambda','https://www.youtube.com/embed/UgWjbSixRg4');
+insert into video(tag,title,url) values('aws','Synchronous Express Workflows In AWS Step Functions','https://www.youtube.com/embed/0VunNuBldnA');
+insert into video(tag,title,url) values('grpc','gRPC Microservice using Spring Boot 3 and Eureka Discovery Server','https://www.youtube.com/embed/tC5TalzsdLA');
+insert into video(tag,title,url) values('grpc','Error Handling in gRPC Spring Boot Microservice','https://www.youtube.com/embed/Ewtgmvd5xFU');
+insert into video(tag,title,url) values('grpc','gRPC Microservice JWT Authentication and Authorisation With Spring Security','https://www.youtube.com/embed/HJd5DqkCmcc');
+insert into video(tag,title,url) values('grpc','File upload using gRPC Client-Streaming in Spring Boot','https://www.youtube.com/embed/PypbeDk3LZE');
+insert into video(tag,title,url) values('go','Learn Object-Oriented Programming In Golang','https://www.youtube.com/embed/6JcPRFEENVs');
+insert into video(tag,title,url) values('go','Creating Golang REST API with Gin-Gonic Web Framework & MongoDB','https://www.youtube.com/embed/vDIAwtGU9LE');
+insert into video(tag,title,url) values('go','Learn Go in one video!','https://www.youtube.com/embed/mXY44uPv7XM');
+insert into video(tag,title,url) values('go','Learn Functions in Go','https://www.youtube.com/embed/IsxueaWalA8');
+insert into video(tag,title,url) values('graphql','Getting Started In Spring For GraphQL With Spring Boot','https://www.youtube.com/embed/H_U2Bu75Ohc');

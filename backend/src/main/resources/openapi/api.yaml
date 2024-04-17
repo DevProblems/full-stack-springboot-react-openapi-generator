@@ -1,0 +1,61 @@
+openapi: 3.0.3
+info:
+  title: DevProblem Youtube Video API
+  description: All API definitions for DevProblems Youtube Videos
+  version: 1.0.0
+  contact:
+    email: sarangdevproblems@gmail.com
+
+servers:
+  - url: http://localhost:8081/api
+    description: Local Testing Server
+
+paths:
+
+    /youtube/video/{tag}:
+      get:
+        tags:
+          - video
+        summary: Get the video by Tag
+        operationId: getVideoByTag
+        parameters:
+          - name: tag
+            in: path
+            required: true
+            schema:
+              type: string
+        responses:
+          '200':
+            description: Success
+            content:
+              application/json:
+                schema:
+                  $ref: "#/components/schemas/Videos"
+
+components:
+  schemas:
+
+    Videos:
+      type: array
+      items:
+        $ref: "#/components/schemas/YoutubeVideo"
+
+    YoutubeVideo:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        url:
+          type: string
+        tag:
+          type: string
+      required:
+        - id
+        - title
+        - url
+        - tag
+
+
+
