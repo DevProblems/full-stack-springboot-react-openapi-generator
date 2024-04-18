@@ -1,5 +1,10 @@
 import { FC, useState } from "react";
 
+/**
+ * @author Dev Problems(A Sarang Kumar Tak)
+ * @youtubechannel <a href="https://www.youtube.com/@devproblems">...</a>
+ */
+
 export interface SearchProp {
   search: (e: string) => void;
 }

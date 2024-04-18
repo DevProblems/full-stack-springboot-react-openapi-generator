@@ -1,6 +1,10 @@
 import { Configuration, VideoApiFactory, YoutubeVideo } from "@devproblems/youtube-videos-api"
 import axios from "axios"
 
+/**
+ * @author Dev Problems(A Sarang Kumar Tak)
+ * @youtubechannel <a href="https://www.youtube.com/@devproblems">...</a>
+ */
 const api = axios.create({
     baseURL: "http://localhost:8081/api",
     headers: {

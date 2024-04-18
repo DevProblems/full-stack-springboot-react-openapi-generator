@@ -6,6 +6,10 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
+/**
+ * @author Dev Problems(A Sarang Kumar Tak)
+ * @youtubechannel <a href="https://www.youtube.com/@devproblems">...</a>
+ */
 public interface VideoRepository extends JpaRepository<Video, Integer> {
 
     List<Video> findByTag(String tag);

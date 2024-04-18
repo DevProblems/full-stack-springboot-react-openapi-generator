@@ -6,6 +6,10 @@ import { getVideoByTag, getVideos } from "./api";
 import { YoutubeVideo } from "@devproblems/youtube-videos-api";
 import VideoGrid from "./VideoGrid";
 
+/**
+ * @author Dev Problems(A Sarang Kumar Tak)
+ * @youtubechannel <a href="https://www.youtube.com/@devproblems">...</a>
+ */
 function App() {
   const [videos, setVideos] = useState<YoutubeVideo[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);

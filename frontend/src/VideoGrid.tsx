@@ -3,6 +3,10 @@ import Spinner from "./components/Spinner";
 import { FC } from "react";
 import Video from "./Video";
 
+/**
+ * @author Dev Problems(A Sarang Kumar Tak)
+ * @youtubechannel <a href="https://www.youtube.com/@devproblems">...</a>
+ */
 export interface VideoGrodProp {
   videos: YoutubeVideo[];
   isLoading: boolean;

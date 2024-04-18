@@ -1,3 +1,8 @@
+
+/**
+ * @author Dev Problems(A Sarang Kumar Tak)
+ * @youtubechannel <a href="https://www.youtube.com/@devproblems">...</a>
+ */
 const Spinner = () => {
   return (
     <img

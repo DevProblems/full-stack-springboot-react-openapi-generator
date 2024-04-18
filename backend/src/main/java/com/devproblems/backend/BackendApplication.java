@@ -7,6 +7,10 @@ import io.swagger.v3.oas.annotations.servers.Servers;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author Dev Problems(A Sarang Kumar Tak)
+ * @youtubechannel <a href="https://www.youtube.com/@devproblems">...</a>
+ */
 @SpringBootApplication
 @OpenAPIDefinition(info = @Info(
         title = "DevProblems Youtube Video API",

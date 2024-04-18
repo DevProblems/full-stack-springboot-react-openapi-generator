@@ -1,6 +1,11 @@
 import { YoutubeVideo } from "@devproblems/youtube-videos-api";
 import { FC } from "react";
 
+/**
+ * @author Dev Problems(A Sarang Kumar Tak)
+ * @youtubechannel <a href="https://www.youtube.com/@devproblems">...</a>
+ */
+
 interface VideoProp {
   video: YoutubeVideo;
 }

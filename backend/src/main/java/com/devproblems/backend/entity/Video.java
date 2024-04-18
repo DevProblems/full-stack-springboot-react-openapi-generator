@@ -3,6 +3,10 @@ package com.devproblems.backend.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+/**
+ * @author Dev Problems(A Sarang Kumar Tak)
+ * @youtubechannel <a href="https://www.youtube.com/@devproblems">...</a>
+ */
 @Data
 @Entity
 @Table(name = "video")
